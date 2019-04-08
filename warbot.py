@@ -70,7 +70,7 @@ def post_message(webhook_url, message):
 if __name__ == "__main__":
         config = read_config('warbot.json')
         webhook_url = config['webhook']
-        from = config['from']
+        url = config['url']
         prev = config['prev']
         cur, colleges = get_votes(from)
 
